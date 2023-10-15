@@ -1,0 +1,122 @@
+:root {
+    --primaryColor: linear-gradient(to right, #8502ff, #578af0, #5dd0ea);
+    --blue: #160045;
+}
+
+.head{
+    background: black;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+}
+
+.logo {
+    position: absolute; 
+    top: 15px;
+    left: 65px;
+    
+}
+
+.navbar {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    background: linear-gradient(to right, #8502ff, #578af0, #5dd0ea);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #8502ff, #578af0, #5dd0ea);
+    transition: width 0.5s;
+}
+
+.navbar:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    background: linear-gradient(to right, #8502ff, #578af0, #5dd0ea);
+    transition: width 0.5s;
+}
+
+.novigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    position: absolute;
+    position: absolute;
+    top: 30px;
+    left: 1300px;
+
+}
+
+.dropbtn {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowncontent {
+    margin-left: -35px;
+    height: 106px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-top: 26px;
+}
+
+.dropdowncontent a {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowncontent a:hover {
+    background-color: #8502ff;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
+
+.navbarAuth {
+    margin-top: 0;
+    border: none;
+    text-decoration: none;
+    color: #5dd0ea;
+    font-size: 20px;
+    background: linear-gradient(to right, #8502ff, #578af0, #5dd0ea);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    cursor: pointer;
+}

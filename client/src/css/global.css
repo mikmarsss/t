@@ -1,0 +1,31 @@
+* {
+    font-family: 'RobotoCondensed-Regular';
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Comforta Bold';
+    src: url(/Шрифт/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url(/Шрифт/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Comforta Light';
+    src: url(/Шрифт/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Comforta Regular';
+    src: url(/Шрифт/Comfortaa-Regular.ttf);
+}
+
+:root{
+    --primaryColor: linear-gradient(to right, #8502ff, #578af0, #5dd0ea);
+    --blue: #160045;
+}
